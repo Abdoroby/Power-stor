@@ -1,0 +1,262 @@
+* , html , body{margin: 0px; padding: 0px; font-family: sans-serif;}
+
+
+body{
+    /* background-color: #eee; */
+    background-repeat: no-repeat;
+    background-size: 1700px;
+    background-color: rgb(0, 110, 255);
+    height: 2000px;
+}
+
+/*----------------------------Start image Slaider-----------------------------*/
+
+.con-slider{
+    position: relative;
+    height: 500px;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+
+
+
+.slider{
+    position: absolute;
+    left: 0px;
+    transition: 1s; 
+    animation: anim-s-1 5s infinite;
+
+}
+
+@keyframes anim-s-1{
+    0%{left: 0px;}
+    30%{left: -1366px;}
+    60%{left: -1366px;}
+    90%{left: -2732px;}
+    100%{left: -2732px;}
+}
+
+
+
+.slider img{
+    position: absolute;
+    overflow: hidden;
+    height: 500px;
+  }
+
+
+
+.S-1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 675px;
+    width: 1366px;
+}
+
+
+.S-2{
+    position: absolute;
+    left: 1366px;
+    top: 0px;
+    height: 675px;
+    width: 1366px;
+}
+
+
+.S-3{
+    position: absolute;
+    left: 2732px;
+    top: 0px;
+    height: 675px;
+    width: 1366px;
+}
+/*----------------------End image Slaider---------------------*/
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    z-index: 50;
+}
+
+.menu .LOGO{
+    float: left;
+    /* height: 30px; */
+    padding: 15px 30px;
+    top: 15px;
+    left: 30px;
+    font-size: 1.2em;
+    /* line-height: 25px; */
+    z-index: 5155;
+
+}
+.LOGO img{position: absolute; top: 0px; width: 60px; height: 60px;}
+.menu > ul{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    left: 100px;
+    list-style-type: none;
+    z-index: 52;
+}
+
+
+.menu > ul > li{
+    float: left;
+}
+
+
+
+.menu-item{
+    display: inline-block;
+    padding: 20px 30px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-item:hover{
+    background-color: #1c1c1c;
+}
+
+
+
+
+.sub-contant{
+    position: absolute;
+    max-height: 0px;
+    top: 60px;
+    overflow: hidden;
+    background-color: rgba(31, 24, 24, 0.4);
+    transition: max-height 0.3s ease-out;
+    z-index: 50;
+}
+
+.menu ul li:hover .sub-contant{
+    max-height: 400px;
+}
+
+
+.sub-contant a{
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 10px;
+}
+
+.sub-drop{
+    padding: 0px;
+}
+
+.sub-drop ul{ 
+    width: 100%;
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+
+.sub-drop ul li a{
+    display: inline-block;
+    padding: 20px 18px;
+}
+
+
+.sub-drop ul li:hover{
+    background-color: #1c1c1c;
+}
+
+
+
+.con{
+    position: absolute;
+    z-index: 5000;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50% , 50%);
+}
+
+
+
+
+.btn{
+    border: 3px solid  #333;
+    color: #fff;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* transition: color 1s; */
+}
+
+
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -50px;
+    height: 0%;
+    width: 100%;
+    background-color: #333;
+    z-index: -1;
+    transition: 0.6s;
+}
+
+/* .btn:hover{color: #fff;} */
+.btn:hover::before{
+    border-radius:50% 50% 0px 0px;
+    height: 375%;
+}
+
+
+.contant{
+    position: absolute;
+    top: 800px;
+    color: rgb(255, 0, 55);
+    margin-left:20px;
+}
+
+
+
+
+.contant div{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.contant div h1{margin-left:80px;}
+
+.con-L , .con-R , .con-B{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid rgb(255, 0, 55);
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 380px;
+    border-radius: 15px;
+}
+
+.contant div pre h4{
+    position: relative;
+    right: 45px;
+}
+.contant div pre h1{
+    position: relative;
+    right: 45px;
+}
+
+
+
+
+
+
+
