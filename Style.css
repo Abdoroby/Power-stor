@@ -22,18 +22,27 @@ body{
 
 .slider{
     position: absolute;
-    left: 0px;
-    transition: 1s; 
-    animation: anim-s-1 5s infinite;
+    /* left: -1368px; */
+    /* left: -10px; */
+    /* left: -10px; */
+    /* left: -2735px; */
+    left: -10px;
+    transition: 1s ease-out;
+    /* animation: anim-s-1 4s infinite ease-in-out; */
 
 }
 
+
+.menu:hover .con-slider .slider{filter: blur(5px); transition: 1s ease-out;}
+
+
 @keyframes anim-s-1{
-    0%{left: 0px;}
-    30%{left: -1366px;}
-    60%{left: -1366px;}
-    90%{left: -2732px;}
-    100%{left: -2732px;}
+    0%{left: -10px;}
+    20%{left: -10px;} 
+    40%{left: -1368px;}
+    60%{left: -1368px;} 
+    80%{left: -2745px;}
+    100%{left: -2745px;}
 }
 
 
@@ -51,25 +60,25 @@ body{
     left: 0px;
     top: 0px;
     height: 675px;
-    width: 1366px;
+    width: 1368px;
 }
 
 
 .S-2{
     position: absolute;
-    left: 1366px;
+    left: 1368px;
     top: 0px;
     height: 675px;
-    width: 1366px;
+    width: 1368px;
 }
 
 
 .S-3{
     position: absolute;
-    left: 2732px;
+    left: 2735px;
     top: 0px;
     height: 675px;
-    width: 1366px;
+    width: 1368px;
 }
 /*----------------------End image Slaider---------------------*/
 .menu{
@@ -80,16 +89,16 @@ body{
     z-index: 50;
 }
 
+
+
+
 .menu .LOGO{
     float: left;
-    /* height: 30px; */
     padding: 15px 30px;
     top: 15px;
     left: 30px;
     font-size: 1.2em;
-    /* line-height: 25px; */
     z-index: 5155;
-
 }
 .LOGO img{position: absolute; top: 0px; width: 60px; height: 60px;}
 .menu > ul{
