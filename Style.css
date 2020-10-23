@@ -27,9 +27,7 @@ body{
     /* left: -10px; */
     /* left: -2735px; */
     left: -10px;
-    transition: 1s ease-out;
     animation: anim-s-1 4s infinite ease-in-out;
-
 }
 
 
